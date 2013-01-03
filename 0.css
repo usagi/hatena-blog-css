@@ -1,0 +1,77 @@
+/* <system section="theme" selected="afternoon"> */
+@import "/css/theme/afternoon/afternoon.css";
+/* </system> */
+
+/* <system section="background" selected="bg30"> */
+body{
+  background-color: #fff;
+  background-image: url('/images/theme/backgrounds/theme30.gif');
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-attachment: scroll;
+} 
+/* </system> */
+
+pre {
+  white-space: pre;
+  overflow-x: scroll;
+  width:100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  background:hsl(0,0%,0%);
+  color:hsl(0,0%,50%);
+  opacity: 0.88;
+  border: dotted hsla(0,0%,100%,0.8) 3px;
+}
+
+pre:hover {
+  width:148.275862%;
+  opacity: 1;
+  border: dotted hsla(0,100%,85%,1) 3px;
+}
+
+#container-inner {
+  position: relative;
+}
+
+#wrapper {
+  position:relative;
+  z-index:1;
+}
+
+.entry-content h1::before ,
+.entry-content h2::before ,
+.entry-content h3::before ,
+.entry-content h4::before ,
+.entry-content h5::before ,
+.entry-content h6::before ,
+.entry-content h1::after ,
+.entry-content h2::after ,
+.entry-content h3::after ,
+.entry-content h4::after ,
+.entry-content h5::after ,
+.entry-content h6::after {
+  font-weight: normal;
+  color: #6692C0;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.entry-content h1::before { content: ":"; }
+.entry-content h2::before { content: "::"; }
+.entry-content h3::before { content: ":::"; }
+.entry-content h4::before { content: "::::"; }
+.entry-content h5::before { content: ":::::"; }
+.entry-content h6::before { content: "::::::"; }
+
+.entry-content h1::after { content: ">"; }
+.entry-content h2::after { content: ">>"; }
+.entry-content h3::after { content: ">>>"; }
+.entry-content h4::after { content> ">>>>"; }
+.entry-content h5::after { content> ">>>>>"; }
+.entry-content h6::after { content> ">>>>>>"; }
+
+.entry-content a:visited {
+  color: #4D4D4D;
+}
